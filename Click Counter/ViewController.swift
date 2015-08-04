@@ -15,5 +15,7 @@ class ViewController: UIViewController {
         var label = UILabel()
         label.frame = CGRectMake(150, 150, 60, 60)//use the method CGRectMake to set the X&Y cordinat and also the hight and width
         label.text = "0"
+        
+        self.view.addSubview(label)
     }
 }
