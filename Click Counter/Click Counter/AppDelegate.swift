@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Click Counter
 //
-//  Created by Vinh Vu on 8/3/15.
-//  Copyright (c) 2015 bhag. All rights reserved.
+//  Created by Vinh Vu on 11/29/15.
+//  Copyright © 2015 Vinh. All rights reserved.
 //
 
 import UIKit
