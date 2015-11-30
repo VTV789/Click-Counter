@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var count = 0
+    var label:UILabel!                         // label is an optional. Optional can be nil and still compile
+    
     override func viewDidLoad() {             // This execute once after the inital view object is set
         super.viewDidLoad()
         
@@ -18,6 +22,7 @@ class ViewController: UIViewController {
         label.text = "0"
         
         self.view.addSubview(label)
+        self.label = label 
         
         //Button
         let button = UIButton()
