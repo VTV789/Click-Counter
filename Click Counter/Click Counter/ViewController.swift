@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         label.text = "0"
         
         self.view.addSubview(label)
-        self.label = label 
+        self.label = label                    // Setting the label text when the button is clicked
         
         //Button
         let button = UIButton()
@@ -30,6 +30,10 @@ class ViewController: UIViewController {
         button.setTitle("Click", forState: .Normal)
         button.setTitleColor(UIColor.blueColor(), forState: .Normal)
         self.view.addSubview(button)
+    }
+    func incrementCount(){                   // This method will be called when the button is clicked
+        self.count++                         // Count and Label is the two propoerties we just created 
+        self.label.text = "\(self.count)"
     }
 }
 
