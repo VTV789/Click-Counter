@@ -30,7 +30,11 @@ class ViewController: UIViewController {
         button.setTitle("Click", forState: .Normal)
         button.setTitleColor(UIColor.blueColor(), forState: .Normal)
         self.view.addSubview(button)
+        
+        button.addTarget(self, action: "incrementCount", forControlEvents:
+            UIControlEvents.TouchUpInside)
     }
+    
     func incrementCount(){                   // This method will be called when the button is clicked
         self.count++                         // Count and Label is the two propoerties we just created 
         self.label.text = "\(self.count)"
